@@ -25,7 +25,7 @@ security professionals to configure, operate, and automate the smallstep
 toolchain and open standard identity technologies.
 
 %prep
-%autosetup -n step_%{version}
+%setup -n step_%{version}
 
 %build
 %global _missing_build_ids_terminate_build 0
