@@ -31,6 +31,7 @@ toolchain and open standard identity technologies.
 %global _missing_build_ids_terminate_build 0
 
 %install
+find . -ls || ls -lR
 install -Dm755 bin/step %{buildroot}/%{_bindir}/step
 install -Dm644 %{SOURCE1} "%{buildroot}%{_datadir}/bash-completion/completions/step"
 install -Dm644 %{SOURCE2} "%{buildroot}%{_datadir}/zsh/site-functions/step"
